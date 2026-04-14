@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE SHIFRA || COURSES PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+
+                <div class="d-flex align-items-center gap-3 ms-auto me-2 order-lg-last">
+                    <div class="notification-box">
+                        <img src="img/bell.png" alt="Notifications" class="bell-img">
+                    </div>
+
+                    <div class="dropdown dropdown-login">
+                        <a class="avtar dropdown-toggle" role="button" id="profileDropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            N
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user me-2"></i> Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i> Settings</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#"><i
+                                        class="fa-solid fa-arrow-right-from-bracket me-2"></i> Logout</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mainNavbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="index.html" data-bs-toggle="dropdown">
+                                Explore <i class="fa-solid fa-chevron-down ms-1"></i>
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="#">Categories</a></li>
+                                <li><a class="dropdown-item" href="#">Trending</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="courses.html" data-bs-toggle="dropdown">
+                                Courses <i class="fa-solid fa-chevron-down ms-1"></i>
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contact.html" data-bs-toggle="dropdown">
+                                Contact <i class="fa-solid fa-chevron-down ms-1"></i>
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="#">Support Center</a></li>
+                                <li><a class="dropdown-item" href="#">Sales</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about-course.html" data-bs-toggle="dropdown">
+                                About us <i class="fa-solid fa-chevron-down ms-1"></i>
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                                <li><a class="dropdown-item" href="#">Team</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-courses">
+        <div class="container text-center">
+        </div>
+    </section>
+    <section class="courses-info py-5">
+        <div class="container text-center">
+            <p>Learn from top experts and take your skills to the next level with our featured courses across design,
+                marketing, cybersecurity, web development, and more!</p>
+
+            <a href="#" class="btn btn-hero">
+                Search Courses
+                <i class="fa-solid fa-magnifying-glass ms-2"></i> </a>
+        </div>
+    </section>
+    <section class="categories py-5">
+        <div class="container">
+            <div class="filter-section">
+                <div class="filter-title text-center mb-3">All categories</div>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="design">
+                        <label class="form-check-label" for="design">Design</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="marketing">
+                        <label class="form-check-label" for="marketing">marketing</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="webdev">
+                        <label class="form-check-label" for="webdev">Web Development</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cybersec">
+                        <label class="form-check-label" for="cybersec">Cyber Security</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="content">
+                        <label class="form-check-label" for="content">Content writing</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Design Courses -->
+            <div class="courses-item mt-5">
+                <h2 class="course-title">Design Courses</h2>
+                <div class="row mt-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Design1.jpg" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-figma-badge">
+                                    <img src="img/figma-icon.png" alt="Figma">
+                                </div>
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team1.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">UI_UX Fundamentals</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 12 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 10 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$55</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Design2.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team2.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Motion Graphic</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 30 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 25 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$29</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Design3.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-figma-badge">
+                                    <img src="img/Graphic-icon.png" alt="Figma">
+                                </div>
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team3.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Graphic Design</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 25 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 25 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$100</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Design4.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team4.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Video montage</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 12 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt="">50 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Marketing Courses -->
+            <div class="courses-item mt-5">
+                <h2 class="course-title">marketing</h2>
+                <div class="row mt-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/marketing1.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team1.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Digital Marketing</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 10 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 35 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$70</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/marketing2.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team2.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Social Media Marketing</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 30 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 15 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$45</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/marketing3.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team3.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Content Marketing</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 15 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 25 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$100</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Design4.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team4.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Video montage</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 12 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt="">50 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Web Development -->
+            <div class="courses-item mt-5">
+                <h2 class="course-title">Web Development</h2>
+                <div class="row mt-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/web1.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team1.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">React.js Essentials</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 12 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 10 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$90</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/web2.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team2.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Full-Stack Development</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 120 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 26 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$300</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/web3.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team3.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Database Management</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 18 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 36 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$87</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/web4.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team3.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Front-End Development</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 33 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt="">78 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$70</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cyber Security -->
+            <div class="courses-item mt-5">
+                <h2 class="course-title">Cyber Security</h2>
+                <div class="row mt-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Cyber1.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team1.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Ethical Hacking</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 12 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 10 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$90</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Cyber2.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team2.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Network Security</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 120 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 26 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$300</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Cyber3.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team3.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Cyber Security for Web</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 18 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 36 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$87</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Cyber4.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team3.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Cyber Security Basic</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 33 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt="">78 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$70</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Writing -->
+            <div class="courses-item mt-5">
+                <h2 class="course-title">Content Writing</h2>
+                <div class="row mt-4 g-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Writing1.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team1.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Content Writing Basic</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 12 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 10 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$90</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Writing2.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team2.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">SEO Writing</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 120 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 26 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$300</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Writing3.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team3.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Blog & Article Writing </h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 18 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt=""> 36 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-muted"></i>
+                                    </div>
+                                    <div class="f-course-price">$87</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="f-course-header">
+                                <img src="img/Writing4.png" alt="UI/UX Graphics" class="f-course-thumb">
+                                <div class="f-instructor-wrapper">
+                                    <img src="img/team4.png" alt="Instructor Name" class="f-instructor-img">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Copywriting Marketing</h3>
+
+                                <div class="f-course-meta-row">
+                                    <span>
+                                        <img src="img/Video Lesson.png" alt=""> 33 lessons
+                                    </span>
+                                    <span>
+                                        <img src="img/studentgroup.png" alt="">78 students
+                                    </span>
+                                </div>
+
+                                <div class="f-course-footer-row">
+                                    <div class="stars">
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                        <i class="fa fa-star text-warning"></i>
+                                    </div>
+                                    <div class="f-course-price">$70</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5">
+        <div class="container">
+            <h2 class="text-center">Ready to start your learning journey?</h2>
+            <a href="#" class="btn btn-foot">Register Now</a>
+            <div class="icon-media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="text-center mt-5">
+                Privacy Policy | Terms & Conditions
+                <br>
+                © 2025 Shifra Training Center – All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

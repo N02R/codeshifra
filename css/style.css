@@ -1,0 +1,260 @@
+/* ==========================================================================
+   1. General Styles & Variables
+   ========================================================================== */
+body {
+    background: #f3f3f3; /* الخلفية العامة الموحدة */
+    font-family: 'Poppins', sans-serif;
+    color: #4F4F4F;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* توحيد ستايل العناوين h2 لكل السكاشن */
+h2 {
+    color: #001B4A;
+    font-size: 32px; /* للموبايل */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+    h2 { font-size: 48px; } /* للديسكتوب */
+}
+
+p { line-height: 1.6; }
+a { text-decoration: none; transition: 0.3s ease; }
+
+/* ==========================================================================
+   2. Header & Navigation (Sticky & Blur Effect)
+   ========================================================================== */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7); /* خلفية بيضاء شفافة */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1030;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-brand img {
+    width: 71px;
+    height: 71px;
+}
+
+.navbar .nav-link {
+    color: #777676;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-link.active {
+    color: #001B4A;
+}
+
+/* تصميم القائمة المنسدلة في الموبايل */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        padding: 20px;
+        margin: 10px 15px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid #eee;
+    }
+    .navbar .nav-link {
+        padding: 12px 0;
+        border-bottom: 1px solid #f5f5f5;
+        margin-right: 0;
+    }
+}
+
+/* أيقونة التنبيهات والبروفايل */
+.notification-box { cursor: pointer; }
+.bell-img { width: 24px; height: 24px; }
+
+.dropdown-login {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: #E1AF00;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-login a { color: #fff; font-size: 18px; font-weight: 600; }
+.dropdown-toggle::after { display: none; }
+
+/* ==========================================================================
+   3. Hero Section
+   ========================================================================== */
+.hero {
+    padding: 60px 0 0;
+    background: #b0b8c7; /* تعتمد على خلفية body */
+}
+
+.hero h1 {
+    color: #001B4A;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.hero h1 span { color: #E1AF00; }
+
+.btn-hero {
+    background: #001B4A;
+    border-radius: 40px;
+    color: #fff;
+    padding: 12px 28px;
+    border: 2px solid #001B4A;
+    font-weight: 500;
+}
+
+.btn-hero:hover { background: transparent; color: #001B4A; }
+
+@media (min-width: 992px) {
+    .hero { padding: 80px 0 0; }
+    .hero h1 { font-size: 48px; }
+    .hero .row { align-items: flex-end; } /* جعل الصورة تلمس الأسفل */
+}
+
+/* ==========================================================================
+   4. Cards Global Style (What We Offer & Featured)
+   ========================================================================== */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: #fff;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+
+/* What We Offer */
+.what-we-offer .offer-img img { height: 50px; object-fit: contain; }
+
+/* Our Featured Courses */
+.Our-Featured-Courses .card img { height: 200px; object-fit: cover; }
+.btn-course {
+    display: inline-block;
+    background: #001B4A;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 40px;
+    margin-top: 15px;
+}
+.btn-course:hover { background: #E1AF00; color: #fff; }
+
+/* ==========================================================================
+   تنسيق سكشن Why Choose Shifra المطور
+   ========================================================================== */
+.Why-Choose-Shifra {
+    padding: 60px 0;
+   
+}
+
+.Why-Choose-Shifra .card {
+    background: none;
+        padding: 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* لتوحيد ارتفاع الكروت */
+}
+
+.Why-Choose-Shifra .card-img {
+    background: #D9D9D9; /* خلفية الأيقونة */
+    width: 100px;
+    height: 70px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Why-Choose-Shifra .card-img img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+.Why-Choose-Shifra .card-text {
+    background: #E1AF00; /* اللون الذهبي الخاص بك */
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: auto; /* يدفع النص للأسفل دائماً */
+    width: fit-content;
+    min-width: 160px;
+}
+
+/* تحسين المسافات في الموبايل */
+@media (max-width: 768px) {
+    .Why-Choose-Shifra .card {
+        margin-bottom: 20px;
+    }
+}
+/* ==========================================================================
+   6. Testimonials (Students Say)
+   ========================================================================== */
+.What-Our-Students-Say .student-card { background: none; border: none; }
+
+.student-img-wrapper {
+    width: 100px; height: 100px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.student-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+.student-text { font-size: 13px; color: #515151; font-weight: 500; }
+
+/* ==========================================================================
+   7. Footer
+   ========================================================================== */
+footer {
+    background: #001B4A;
+    color: #fff;
+    padding: 60px 0 30px;
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+}
+
+footer h2 { color: #fff; margin-bottom: 20px; }
+
+.btn-foot {
+    display: inline-flex;
+    background: #fff; color: #001B4A;
+    padding: 12px 35px;
+    border-radius: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.btn-foot:hover { background: #E1AF00; color: #fff; }
+
+.icon-media a {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px;
+    border: 2px solid #fff; border-radius: 50%;
+    color: #fff; margin: 0 8px;
+    font-size: 18px;
+}
+
+.icon-media a:hover { background: #fff; color: #001B4A; }

@@ -1,0 +1,599 @@
+/* =========================================================
+   HERO COURSES
+========================================================= */
+.hero-courses {
+    background: url("../img/courses.jpg") no-repeat center center/cover;
+    height: 500px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .hero-courses {
+        height: 300px;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+}
+
+
+/* =========================================================
+   COURSES INFO
+========================================================= */
+.courses-info {
+    padding: 80px 0;
+}
+
+.courses-info p {
+    color: #001B4A;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 992px) {
+    .courses-info p {
+        font-size: 48px;
+    }
+}
+
+.courses-info .btn-hero {
+    padding: 15px 40px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.courses-info .btn-hero i {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   FILTER + COURSES CARDS
+========================================================= */
+.filter-title {
+    color: #001B4A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-check-input {
+    background: #D9D9D9;
+    border: 1px solid #ACACAC;
+}
+
+.form-check-label {
+    color: #001B4A;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.courses-item .course-title {
+    font-weight: 500;
+    font-size: 48px;
+    color: #001B4A;
+    text-align: start;
+}
+
+.courses-item .card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-item .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.f-course-header {
+    position: relative;
+    height: 180px;
+}
+
+.f-course-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.f-figma-badge {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 70px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.f-figma-badge img {
+    width: 100%;
+    height: auto;
+}
+
+.f-instructor-wrapper {
+    position: absolute;
+    bottom: -15px;
+    left: 7px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.f-instructor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.courses-item .card-body .card-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: #001B4A;
+}
+
+.f-course-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.f-course-meta-row span {
+    display: flex;
+    align-items: center;
+}
+
+.f-course-footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 12px;
+    margin-top: auto;
+}
+
+.stars i {
+    font-size: 0.9rem;
+}
+
+.f-course-price {
+    font-weight: 800;
+    color: #dc2626;
+    font-size: 1.25rem;
+}
+
+
+/* =========================================================
+   UI/UX HERO
+========================================================= */
+.uiux-hero h2 {
+    color: #001B4A;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.uiux-info p {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 150%;
+}
+
+.uiux-info img {
+    width: 606px;
+    height: 426px;
+    border-radius: 24px;
+}
+
+@media (max-width: 576px) {
+    .uiux-hero h2 {
+        font-size: 28px;
+    }
+
+    .uiux-info p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .uiux-info img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+}
+
+
+/* =========================================================
+   INSTRUCTOR
+========================================================= */
+.instructor .card {
+    border-radius: 8px;
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px #00000040;
+}
+
+.instructor .card h5 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #001B4A;
+    margin-bottom: 1rem;
+}
+
+.instructor .card .inst-name {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #001B4A;
+}
+
+.instructor .card .inst-avatar img {
+    width: 90px;
+    height: 90px;
+}
+
+.instructor .card .inst-role,
+.instructor .card .inst-bio {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+}
+
+@media (max-width: 576px) {
+    .instructor .card h5 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .instructor .card .inst-name {
+        font-size: 28px;
+    }
+
+    .instructor .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instructor-info {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .instructor .card .inst-avatar img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .instructor .card .inst-role,
+    .instructor .card .inst-bio {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .instructor .card h5,
+    .instructor .card .inst-name {
+        font-size: 36px;
+    }
+}
+
+.instructor .d-flex {
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   ABOUT + PRICE CARD
+========================================================= */
+.about h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #001B4A;
+}
+
+.about p {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 150%;
+    color: #00000099;
+}
+
+.price-card {
+    width: 506px;
+    height: 420px;
+    border-radius: 8px;
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px #00000040;
+}
+
+.price-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-label {
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+}
+
+.price-value {
+    width: 121px;
+    height: 74px;
+    border-radius: 16px;
+    padding: 8px 4px;
+    background: #FF00001A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 48px;
+    color: #FF0000;
+}
+
+.price-meta {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+.stars-sm {
+    font-size: 1rem;
+}
+
+.meta-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 12px 0;
+    margin: 10px 0;
+    gap: 4px;
+}
+
+.meta-item label {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    color: #3F4548;
+    margin-bottom: 0.5rem;
+}
+
+.meta-item span {
+    font-weight: 300;
+    font-size: 24px;
+    color: #000;
+}
+
+.mini-inst {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.mini-inst-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.mini-inst-name {
+    font-weight: 500;
+    font-size: 24px;
+    color: #001B4A;
+}
+
+.mini-inst-role {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.perks {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.perk-badge {
+    width: 140px;
+    height: 45px;
+    border-radius: 24px;
+    padding: 8px;
+    background: #F6F6F6;
+    font-weight: 500;
+    font-size: 15px;
+    color: #3F4548;
+}
+
+.btn-enroll-full {
+    width: 100%;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CURRICULUM
+========================================================= */
+.section-title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #001B4A;
+    margin-bottom: 18px;
+}
+
+.curriculum-list {
+    border: 1.5px solid #e5e9f2;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+}
+
+.curriculum-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-bottom: 1px solid #f0f4fa;
+    cursor: pointer;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.curriculum-item:last-child {
+    border-bottom: none;
+}
+
+.curriculum-item:hover {
+    background: var(--light-bg);
+}
+
+.cur-title {
+    font-family: 'Sora', sans-serif;
+    font-size: .88rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.cur-sub {
+    font-size: .75rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.cur-badge {
+    font-size: .75rem;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.cur-badge.preview {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.cur-badge.lectures {
+    background: #eff6ff;
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   WHAT YOU'LL LEARN
+========================================================= */
+.learn-list {
+    list-style: disc;
+    padding: 0;
+}
+
+.learn-list li {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000CC;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   REVIEWS
+========================================================= */
+.reviews-wrap {
+    background: #fff;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.review-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+    border-bottom: 1px solid #f0f4fa;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.rev-avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rev-text {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.rev-time {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    .review-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .review-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rev-time {
+        align-self: flex-end;
+        margin-top: 5px;
+    }
+
+    .rev-avatar img {
+        width: 42px;
+        height: 42px;
+    }
+}
